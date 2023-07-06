@@ -3,7 +3,7 @@ import { MainPage } from "./Components/MainPage/MainPage.jsx";
 import { Root } from "./routes/Root.jsx";
 import { ErrorPage } from "./Components/ErrorPage/ErrorPage.jsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<MainPage />} />
@@ -14,6 +14,6 @@ const router = createBrowserRouter([
       <Route path="*" element={<ErrorPage />} />
     </Route>
   )
-])
+)
 
 export const App = () => <RouterProvider router={router}></RouterProvider>
