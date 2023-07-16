@@ -2,24 +2,8 @@ import cn from 'classnames';
 import { Container } from '../Layout/Container/Container.jsx';
 import s from './Footer.module.scss';
 import { NavLink } from 'react-router-dom';
-const list = [
-    { link: 'women', title: 'Женщины', categories: [
-        { link: 'bras', title: 'Бюстгальтеры' },
-        { link: 'panties', title: 'Трусы' },
-        { link: 'socks', title: 'Носки' },
-        { link: 'bathrobes', title: 'Халаты' },
-        { link: 'thermal', title: 'Термобелье' },
-        { link: 'pijamas', title: 'Пижамы' },
-    ] },
-    { link: 'men', title: 'Мужчины', categories: [
-        { link: 'panties', title: 'Трусы' },
-        { link: 'socks', title: 'Носки' },
-        { link: 'bathrobes', title: 'Халаты' },
-        { link: 'thermal', title: 'Термобелье' },
-    ] },
-];
 
-export const Footer = () => (
+export const Footer = ({ list }) => (
     <footer>
         <Container>
             <div className={s.container}>
